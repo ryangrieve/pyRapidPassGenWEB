@@ -31,5 +31,4 @@ with col1:
             for i in range(number_pass):
                 CHARACTERS = (ascii_letters, digits, punctuation)
                 x = CHARACTERS if special_chars == "yes" else CHARACTERS[0:1]
-                password = "".join(choice("".join(x)) for i in range(chars))
-                st.text(password)
+                st.text("".join(choice("".join(x)) for i in range(chars)))
